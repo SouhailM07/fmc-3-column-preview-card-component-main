@@ -1,4 +1,6 @@
 import "./mycard.css";
+// shadcn-ui
+import { useToast } from "@/components/ui/use-toast";
 
 interface MyCard_type {
   img: string;
@@ -8,6 +10,7 @@ interface MyCard_type {
 }
 
 export default function MyCard({ img, color, title, txt }: MyCard_type) {
+  const { toast } = useToast();
   return (
     <>
       <section
@@ -20,6 +23,12 @@ export default function MyCard({ img, color, title, txt }: MyCard_type) {
         </div>
         <button
           className={`text-${color} duration-300 transition-all hover:bg-transparent border-2 border-white hover:text-white bg-white  px-[1.4rem] font-medium text-[15px] rounded-full py-[0.5rem]`}
+          onClick={() => {
+            toast({
+              title: `You select ${title}`,
+              description: "Coming soon ...",
+            });
+          }}
         >
           Learn More
         </button>

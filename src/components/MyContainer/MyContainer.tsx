@@ -1,5 +1,7 @@
 import "./mycontainer.css";
 // components
+import { Toaster } from "@/components/ui/toaster";
+
 import { MyCard } from "../../components";
 // assets
 import img1 from "/icon-sedans.svg";
@@ -36,6 +38,7 @@ export default function MyContainer() {
   return (
     <>
       <main className="flex justify-center items-center min-h-screen">
+        <Toaster />
         <article className="grid grid-cols-3 max-md:grid-cols-1 ">
           {cars.map((e, i) => {
             return (
