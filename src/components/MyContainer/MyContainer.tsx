@@ -18,19 +18,19 @@ export default function MyContainer() {
   const cars: Cars[] = [
     {
       img: img1,
-      color: "BrightOrange",
+      color: "hsl(31, 77%, 52%)",
       title: "SEDANS",
       txt: " Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the city or on your next road trip.",
     },
     {
       img: img2,
-      color: "DarkCyan",
+      color: "hsl(184, 100%, 22%)",
       title: "SUVs",
       txt: "Take an SUV for its spacious interior, power, and versatility. Perfect for your next family vacation and off-road adventures.",
     },
     {
       img: img3,
-      color: "VeryDarkCyan",
+      color: "hsl(179, 100%, 13%)",
       title: "Luxury",
       txt: "Cruise in the best car brands without the bloated prices. Enjoy the enhanced comfort of a luxury rental and arrive in style.",
     },
