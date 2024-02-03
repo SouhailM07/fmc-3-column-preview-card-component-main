@@ -3,3 +3,27 @@
 @tailwind utilities;
 @layer components {
 }
+
+#color1 {
+  @apply bg-[#e38826];
+}
+#color1 button {
+  @apply text-[#e38826];
+}
+
+#color2 {
+  @apply bg-[#006970];
+}
+#color2 button {
+  @apply text-[#006970];
+}
+#color3 {
+  @apply bg-[#004241];
+}
+#color3 button {
+  @apply text-[#004241];
+}
+
+:has(#color3, #color2, #color1) button:hover {
+  @apply text-white;
+}

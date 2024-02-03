@@ -14,7 +14,8 @@ export default function MyCard({ img, color, title, txt }: MyCard_type) {
   return (
     <>
       <section
-        className={`bg-[${color}] max-w-[14rem] text-white px-[2rem] space-y-[3rem] py-[2rem] `}
+        id={color}
+        className="max-w-[14rem] text-white px-[2rem] space-y-[3rem] py-[2rem] "
       >
         <div className="space-y-[1rem]">
           <img src={img} alt="logo" />
@@ -22,7 +23,7 @@ export default function MyCard({ img, color, title, txt }: MyCard_type) {
           <p className="text-[15px] w400 ">{txt}</p>
         </div>
         <button
-          className={`text-[${color}] duration-300 transition-all hover:bg-transparent border-2 border-white hover:text-white bg-white  px-[1.4rem] font-medium text-[15px] rounded-full py-[0.5rem]`}
+          className={`${color} duration-300 transition-all hover:bg-transparent border-2 border-white hover:text-white bg-white  px-[1.4rem] font-medium text-[15px] rounded-full py-[0.5rem]`}
           onClick={() => {
             toast({
               title: `You select ${title}`,
